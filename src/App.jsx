@@ -82,10 +82,11 @@ function DemoSection() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
       })
-      if (!res.ok) throw new Error('Request failed')
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Request failed')
       setSubmitted(true)
-    } catch {
-      setError('Something went wrong. Please try again.')
+    } catch (err) {
+      setError(err.message || 'Something went wrong. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -175,10 +176,11 @@ function ContactSection() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, message }),
       })
-      if (!res.ok) throw new Error('Request failed')
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Request failed')
       setSubmitted(true)
-    } catch {
-      setError('Something went wrong. Please try again.')
+    } catch (err) {
+      setError(err.message || 'Something went wrong. Please try again.')
     } finally {
       setLoading(false)
     }
