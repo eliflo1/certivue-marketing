@@ -307,21 +307,39 @@ function App() {
           ))}
         </div>
 
-        <a
-          href="#demo"
-          style={{
-            background: '#22d3c8',
-            color: '#0f1117',
-            fontWeight: 500,
-            borderRadius: 8,
-            padding: '8px 18px',
-            textDecoration: 'none',
-            fontSize: 14,
-            whiteSpace: 'nowrap',
-          }}
-        >
-          Request a demo
-        </a>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          <a
+            href="https://app.certivue.com"
+            style={{
+              background: 'transparent',
+              color: '#22d3c8',
+              fontWeight: 500,
+              borderRadius: 8,
+              padding: '8px 18px',
+              textDecoration: 'none',
+              fontSize: 14,
+              whiteSpace: 'nowrap',
+              border: '1px solid #22d3c8',
+            }}
+          >
+            Sign in
+          </a>
+          <a
+            href="#demo"
+            style={{
+              background: '#22d3c8',
+              color: '#0f1117',
+              fontWeight: 500,
+              borderRadius: 8,
+              padding: '8px 18px',
+              textDecoration: 'none',
+              fontSize: 14,
+              whiteSpace: 'nowrap',
+            }}
+          >
+            Request a demo
+          </a>
+        </div>
       </nav>
 
       {/* HERO */}
