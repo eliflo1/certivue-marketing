@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://certivue.com/sitemap.xml
