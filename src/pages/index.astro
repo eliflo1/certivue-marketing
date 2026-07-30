@@ -174,14 +174,26 @@ import {
       <ContactSection client:load />
 
       <!-- FOOTER -->
-      <footer style="border-top:0.5px solid rgba(255,255,255,0.06); padding:24px 40px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-        <a href="#" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
-          <Logo size={24} />
-          <Wordmark />
-        </a>
-        <span style="color:rgba(255,255,255,0.25); font-size:12px;">
-          © 2026 Certivue. Built for sterile processing.
-        </span>
+      <footer style="border-top:0.5px solid rgba(255,255,255,0.06); padding:40px; display:flex; flex-direction:column; gap:24px;">
+        <div>
+          <p style="color:#22d3c8; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; margin:0 0 12px;">Solutions</p>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/competency-tracking" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:14px; font-weight:400;">Competency Tracking</a>
+            <a href="/certification-tracking" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:14px; font-weight:400;">Certification Tracking</a>
+            <a href="/training-records" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:14px; font-weight:400;">Training & In-Service Records</a>
+            <a href="/compliance" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:14px; font-weight:400;">Compliance & Survey Readiness</a>
+            <a href="/" style="color:rgba(255,255,255,0.6); text-decoration:none; font-size:14px; font-weight:400;">Home</a>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+          <a href="#" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
+            <Logo size={24} />
+            <Wordmark />
+          </a>
+          <span style="color:rgba(255,255,255,0.25); font-size:12px;">
+            © 2026 Certivue. Built for sterile processing.
+          </span>
+        </div>
       </footer>
     </div>
   </body>
